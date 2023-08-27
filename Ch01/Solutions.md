@@ -63,7 +63,7 @@ f. Bytecode Validator.
 
 ## 1.7
 
-M analyzes the bytecodes as they’re interpreted, searching for hot spots—bytecodes that execute frequently. For these parts, a just-in-time
+JVM analyzes the bytecodes as they’re interpreted, searching for hot spots—bytecodes that execute frequently. For these parts, a just-in-time
 (JIT) compiler, translates the bytecodes into the
 computer’s machine language. When the JVM encounters these compiled parts again, the
 faster machine-language code executes.
