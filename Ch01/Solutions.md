@@ -1,7 +1,29 @@
 
 # Self-Review Exercises Solutions
 
-## 1.1
+<p align="center">
+  <h3 align="center">Chapter #1 Solutions</h3>
+</p>
+
+## Table of contents
+
+- [1.1](#1_1)
+- [1.2](#1_2)
+- [1.3](#1_3)
+- [1.4](#1_4)
+- [1.5](#1_5)
+- [1.6](#1_6)
+- [1.7](#1_7)
+- [1.8](#1_8)
+- [1.9](#1_9)
+- [1.10](#1_10)
+- [1.11](#1_11)
+- [1.12](#1_12)
+- [1.13](#1_13)
+- [1.14](#1_14)
+- [1.15](#1_15)
+
+## 1_1
 
 a. Programs.
 b. Input units, output units, ALU (arithmetic and logic unit), CPU (central processing unit), secondary storage unit, memory unit.
@@ -11,7 +33,7 @@ e. Android.
 f. Release Candidate.
 g. accelerometer.
 
-## 1.2
+## 1_2
 
 a. java "name of the file with .class extension".
 b. javac "name of the file with .java extension".
@@ -19,7 +41,7 @@ c. .java.
 d. .class.
 e. Bytecode.
 
-## 1.3
+## 1_3
 
 a. Information hiding.
 b. Classes.
@@ -32,7 +54,7 @@ f. Attributes.
 
 # Exercises Solutions
 
-## 1.4
+## 1_4
 
 a. Input unit.
 b. Programming.
@@ -45,14 +67,14 @@ h. High level languages.
 i. Machine language.
 j. CPU (central processing unit).
 
-## 1.5
+## 1_5
 
 a. Java.
 b. Java SE (standard edition), Java EE (enterprise edition), Java ME (micro edition).
 c. Bandwidth.
 d. Assembler.
 
-## 1.6
+## 1_6
 
 a. Editing, compiling, loading, bytecode verification, and execution.
 b. IDE (integrated development environment).
@@ -61,10 +83,13 @@ d. VM (virtual machine).
 e Class Loader.
 f. Bytecode Validator.
 
-## 1.7
+## 1_7
 
 JVM analyzes the bytecodes as they’re interpreted, searching for hot spots—bytecodes that execute frequently. For these parts, a just-in-time
 (JIT) compiler, translates the bytecodes into the
 computer’s machine language. When the JVM encounters these compiled parts again, the
 faster machine-language code executes.
 
+<style type="text/css">
+    ol { list-style-type: small-alpha; }
+</style>
