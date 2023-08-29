@@ -1,9 +1,5 @@
 
-# Self-Review Exercises Solutions
-
-<p align="center">
-  <h3 align="center">Chapter #1 Solutions</h3>
-</p>
+# Chapter #1 Solutions
 
 ## Table of contents
 
@@ -49,8 +45,6 @@
 4. d) Inheritance.
 5. e) UML (unified modeling language).
 6. f) Attributes.
-
----
 
 ## 1_4
 
@@ -137,7 +131,7 @@ The formula for BMI is weight in kilograms (kg) divided by height in meters squa
 2. Have every gender-specific word with it's gender-neutral replacement.
 3. When encountering a gender-specific word replace it with it's corresponding gender-neutral one.
 
-This procudure might produce strange term like "woperchild" when it's replaceing a part of the word for example "Woman" have "man" in it so when replaced by person it becomes "Woperson" but person itself contains a son inside of it so when replaced it becomes "Woperchild".
+This procedure might produce strange term like "woperchild" when it's replacing a part of the word for example "Woman" have "man" in it so when replaced by person it becomes "Woperson" but person itself contains a son inside of it so when replaced it becomes "Woperchild".
 
 ## 1_13
 
