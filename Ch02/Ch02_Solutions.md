@@ -1,24 +1,15 @@
-# Chapter #2 Solutions
+# Chapter #2 Self-Review Exercises
 
 ## Table of contents
 
-- [2.1](#2_1)
+- [2.1](#Question_one)
 - [2.2](#2_2)
-- [2.3](#2_3)
+- [2.3](#Question_Three)
 - [2.4](#2_4)
 - [2.5](#2_5)
 - [2.6](#2_6)
-- [2.7](#2_7)
-- [2.8](#2_8)
-- [2.9](#2_9)
-- [2.10](#2_10)
-- [2.11](#2_11)
-- [2.12](#2_12)
-- [2.13](#2_13)
-- [2.14](#2_14)
-- [2.15](#2_15)
 
-## 2_1
+## Question_one
 
 2. a) left curly brace {, and right curly brace }.
 2. b) if statements.
@@ -43,7 +34,7 @@
 5. e) FALSE, *, / and % have a higher precedence than + and -.
 6. f) FALSE, starting from java 9 `_` (underscore) is no longer a valid identifier.
 
-## 2_3
+## Question_Three
 
 1. a)
 
