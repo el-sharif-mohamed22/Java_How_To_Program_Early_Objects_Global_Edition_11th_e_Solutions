@@ -156,7 +156,7 @@ public class Arithmetic {
 ## 2.16 (Comparing Integers) Write an application
 
 ```java
-// program that takes two integers then make some calculations.
+// Program that takes an integer and make some comparisons on the number and its square.
 
 import java.util.Scanner;
 
@@ -167,10 +167,165 @@ public class Compare {
         System.out.print("Enter an integer: ");
         int num = input.nextInt();
         int square = num * num;
-        
-        if 
-        
-        
+
+        // case 1: check if the number and its square are greater than 100.
+        if (num > 100) {
+            // if the num > 100 then for sure (num * num) > 100
+            System.out.println("The number and its square are greater than 100.");
+        }
+
+        // case 2: check if the number and its square are equal to 100.
+        // this case will never happen because if num = 100, then 100 * 100 != 100
+
+        // case 3: check if the number and its square are not equal to 100.
+        if (num != 100) {
+            if (square != 100) {
+                System.out.println("The number and its square are not equal to 100.");
+            }
+        }
+
+        // case 4: check if the number and its square are less than 100.
+        if (num < 100) {
+            if (square < 100) {
+                System.out.println("The number and its square are less than 100.");
+            }
+        }
     }
 }
 ```
+
+## 2.17 (Arithmetic, Smallest and Largest) Write an application
+
+```java
+// Program that takes three integers, calculate sum, average, smallest and largest.
+
+import java.util.Scanner;
+
+public class Arithmetic {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = input.nextInt();
+
+        System.out.print("Enter the third number: ");
+        int num3 = input.nextInt();
+
+        int sum = num1 + num2 + num3;
+        int average = sum / 3;
+        
+        // if there are a number less than the smallest then smallest takes that number.        
+        int smallest = num1;
+        if (smallest > num2) {
+            smallest = num2;
+        }
+        if (smallest > num3) {
+            smallest = num3;
+        }
+
+        // if there are a number greater than the largest then largest takes that number.
+        int largest = num1;
+        if (largest < num2) {
+            largest = num2;
+        }
+        if (largest < num3) {
+            largest = num3;
+        }
+
+        System.out.printf("Sum of the three number = %d%n", sum);
+        System.out.printf("Average of the three number = %d%n", average);
+        System.out.printf("Smallest of the three number = %d%n", smallest);
+        System.out.printf("largest of the three number = %d%n", largest);
+        
+    }
+}
+
+```
+
+## 2.18 (Displaying Shapes with Asterisks) Write an application
+
+```java
+// Program that displays a box, an oval, an arrow and a diamond using asterisks.
+
+public class Shapes {
+    public static void main(String[] args) {
+
+        System.out.println("*********     ***       *        *");
+        System.out.println("*       *   *     *    ***      * *");
+        System.out.println("*       *  *       *  *****    *   *");
+        System.out.println("*       *  *       *    *     *     *");
+        System.out.println("*       *  *       *    *    *       *");
+        System.out.println("*       *  *       *    *     *     *");
+        System.out.println("*       *  *       *    *      *   *");
+        System.out.println("*       *   *     *     *       * *");
+        System.out.println("*********     ***       *        *");
+    }
+
+}
+
+```
+
+## 2.19 What does the following code print
+
+```bat
+  ****
+ ******
+*******
+ ******
+  ****
+
+```
+
+## 2.20 What does the following code print
+
+```bat
+*
+***
+*****
+****
+**
+
+```
+
+## 2.21 What does the following code print
+
+```bat
+***************
+
+```
+
+## 2.22 What does the following code print
+
+```bat
+****
+*****
+******
+
+```
+
+## 2.23 What does the following code print
+
+```bat
+  *
+ *** 
+*****
+ ***
+  *
+
+```
+
+## 2.24 (Largest and Smallest Integers) Write an application
+
+```java
+// Program that determines the largest and smallest among 5 integers
+
+import java.util.Scanner;
+public class Finder {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+    }
+}```
