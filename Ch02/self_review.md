@@ -31,7 +31,7 @@
 2. b) `TRUE`.
 3. c) `FALSE`, java is a case sensitive language so number and NumMbEr are considered to be different.
 4. d) `FALSE`, can be used with other types like `long`.
-5. e) `FALSE`, *, / and % have a higher precedence than + and -.
+5. e) `FALSE`, `*`, `/` and `%` have a higher precedence than `+` and `-`.
 6. f) `FALSE`, starting from java 9 `_` (underscore) is no longer a valid identifier.
 
 ## Write statements to accomplish each of the following tasks
