@@ -326,6 +326,300 @@ import java.util.Scanner;
 public class Finder {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
+
+        System.out.print("Enter 1st integer: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter 2nd integer: ");
+        int num2 = input.nextInt();
+
+        System.out.print("Enter 3rd integer: ");
+        int num3 = input.nextInt();
+
+        System.out.print("Enter 4th integer: ");
+        int num4 = input.nextInt();
+
+        System.out.print("Enter 5th integer: ");
+        int num5 = input.nextInt();
+
+        int smallest = num1;
+        if (smallest > num2) {
+            smallest = num2;
+        }
+        if (smallest > num3) {
+            smallest = num3;
+        }
+        if (smallest > num4) {
+            smallest = num4;
+        }
+        if (smallest > num5) {
+            smallest = num5;
+        }
+
+        int largest = num1;
+        if (largest < num2) {
+            largest = num2;
+        }
+        if (largest < num3) {
+            largest = num3;
+        }
+        if (largest < num4) {
+            largest = num4;
+        }
+        if (largest < num5) {
+            largest = num5;
+        }
+
+        System.out.printf("Smallest = %d, Largest = %d%n", smallest, largest);
     }
-}```
+}
+```
+
+## 2.25 (Divisible by 3) Write an application
+
+```java
+// Program that takes a number a check if it's divisible by 3.
+import java.util.Scanner;
+public class Divisible {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int number = input.nextInt();
+
+        if (number % 3 == 0) {
+            System.out.printf("%d is divisible by 3%n", number);
+        }
+    }
+}
+```
+
+## 2.26 (Multiples) Write an application
+
+```java
+// Program that  determines whether the first number tripled is a multiple of the second number doubled.
+import java.util.Scanner;
+public class Multiple {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int num1 = input.nextInt();
+        int num1Tripled = num1 * 3;
+
+        System.out.print("Enter second number: ");
+        int num2 = input.nextInt();
+        int num2Doubled = num2 * 2;
+
+        if (num1Tripled % num2Doubled == 0) {
+            System.out.printf("%d tripled is a multiple of %d doubled%n", num1, num2);
+        }
+    }
+}
+```
+
+## 2.27 (Checkerboard Pattern of Asterisks) Write an application
+
+```java
+// program that prints a checkerboard pattern of asterisks
+public class Checkerboard {
+    public static void main (String[] args) {
+        System.out.println("* * * * * * * *");
+        System.out.println(" * * * * * * * *");
+        System.out.println("* * * * * * * *");
+        System.out.println(" * * * * * * * *");
+        System.out.println("* * * * * * * *");
+        System.out.println(" * * * * * * * *");
+        System.out.println("* * * * * * * *");
+        System.out.println(" * * * * * * * *");
+    }
+}
+```
+
+## 2.28 (Diameter, Circumference and Area of a Circle)
+
+```java
+// Program that calculates the diameter, circumference and area of a circle using radius.
+import java.util.Scanner;
+public class Circle {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the radius of the circle: ");
+        int radius = input.nextInt();
+
+        System.out.printf("diameter = %d%n", radius * 2);
+        System.out.printf("circumference = %f%n", 2 * Math.PI * radius);
+        System.out.printf("area = %f%n", Math.PI * radius * radius);
+    }
+}
+```
+
+## 2.29 (Integer Value of a Character) 
+
+```java
+// Program that displays the integer value of some characters.
+public class Caster{
+    public static void main(String[] args) {
+        System.out.printf("The character %c has the value %d%n", 'A', (int) 'A');
+        System.out.printf("The character %c has the value %d%n", 'B', (int) 'B');
+        System.out.printf("The character %c has the value %d%n", 'C', (int) 'C');
+        System.out.printf("The character %c has the value %d%n", 'a', (int) 'a');
+        System.out.printf("The character %c has the value %d%n", 'b', (int) 'b');
+        System.out.printf("The character %c has the value %d%n", 'c', (int) 'c');
+        System.out.printf("The character %c has the value %d%n", '0', (int) '0');
+        System.out.printf("The character %c has the value %d%n", '1', (int) '1');
+        System.out.printf("The character %c has the value %d%n", '2', (int) '2');
+        System.out.printf("The character %c has the value %d%n", '$', (int) '$');
+        System.out.printf("The character %c has the value %d%n", '*', (int) '*');
+        System.out.printf("The character %c has the value %d%n", '+', (int) '+');
+        System.out.printf("The character %c has the value %d%n", '/', (int) '/');
+        System.out.printf("The character %c has the value %d%n", ' ', (int) ' ');
+
+    }
+}
+```
+
+## 2.30 (Separating the Digits in an Integer)
+
+```java
+// Program that given a 5-digits number separates its digits.
+
+import java.util.Scanner;
+
+public class Separator {
+    public static void main (String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a 5-digit number: ");
+        int num = input.nextInt();
+        
+        int copy = num;
+        int digit1 = copy % 10;
+        copy = copy / 10;
+        int digit2 = copy % 10;
+        copy = copy / 10;
+        int digit3 = copy % 10;
+        copy = copy / 10;
+        int digit4 = copy % 10;
+        copy = copy / 10;
+        int digit5 = copy % 10;
+
+        System.out.printf("%d\t%d\t%d\t%d\t%d%n", digit5, digit4, digit3, digit2, digit1);
+    }
+}
+
+```
+> if you enter a number with more than five digits then all the additional digits won't be printed, and if you enter a number with less than five digits then the remaining digits would be printed as zeros.
+
+## 2.31 (Table of Squares and Cubes)
+
+```java
+// Program that prints a table of numbers from 0 to 10 with its square and cube.
+public class Table {
+    public static void main(String[] args) {
+
+        System.out.printf("%s\t%s\t%s%n", "number", "square", "cube");
+        int num = 0;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 1;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 2;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 3;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 4;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 5;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 6;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 7;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 8;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 9;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+        num = 10;
+        System.out.printf("%d\t\t%d\t\t%d%n", num, num * num, num * num * num);
+    }
+}
+```
+
+## 2.32 (Negative, Positive and Zero Values)
+
+```java
+// A program that takes 5 integers and determines the number of negative, positive and zeros.
+import java.util.Scanner;
+public class Counter {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter 1st integer: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter 2nd integer: ");
+        int num2 = input.nextInt();
+
+        System.out.print("Enter 3rd integer: ");
+        int num3 = input.nextInt();
+
+        System.out.print("Enter 4th integer: ");
+        int num4 = input.nextInt();
+
+        System.out.print("Enter 5th integer: ");
+        int num5 = input.nextInt();
+
+        int positive = 0;
+        int negative = 0;
+        int zeros = 0;
+
+        if (num1 < 0) {
+            negative = negative + 1;
+        }
+        if (num1 == 0) {
+            zeros = zeros + 1;
+        }
+        if (num1 > 0) {
+            positive = positive + 1;
+        }
+        if (num2 < 0) {
+            negative = negative + 1;
+        }
+        if (num2 == 0) {
+            zeros = zeros + 1;
+        }
+        if (num2 > 0) {
+            positive = positive + 1;
+        }
+        if (num3 < 0) {
+            negative = negative + 1;
+        }
+        if (num3 == 0) {
+            zeros = zeros + 1;
+        }
+        if (num3 > 0) {
+            positive = positive + 1;
+        }
+        if (num4 < 0) {
+            negative = negative + 1;
+        }
+        if (num4 == 0) {
+            zeros = zeros + 1;
+        }
+        if (num4 > 0) {
+            positive = positive + 1;
+        }
+        if (num5 < 0) {
+            negative = negative + 1;
+        }
+        if (num5 == 0) {
+            zeros = zeros + 1;
+        }
+        if (num5 > 0) {
+            positive = positive + 1;
+        }
+        System.out.printf("Number of negatives = %d, zeros = %d, positives = %d%n", negative, zeros, positive);
+    }
+}
+```
