@@ -11,10 +11,10 @@
 
 ## Fill in the blanks
 
-2. a) left curly brace `{`, and right curly brace `}`.
-2. b) if statements.
+1. a) left curly brace `{`, and right curly brace `}`.
+2. b) `if` statement.
 3. c) double forward slashes `//`.
-4. d) spaces, tabs and end-lines.
+4. d) space characters, tabs and new-lines.
 5. e) keywords.
 6. f) main method `public static void main(String[] args)`.
 7. g)
@@ -42,6 +42,7 @@
     int c = 0;
     int thisIsAVariable = 0;
     int q76454 = 0;
+    int number = 0;
     ```
 
 2. b)
@@ -65,7 +66,7 @@
 5. e)
 
     ```java
-    System.out.printf("%s%n%s", "This is a Java", " program");
+    System.out.printf("%s%n%s%n", "This is a Java", "program");
     ```
 
 6. f)
