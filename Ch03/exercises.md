@@ -28,7 +28,7 @@
 
 ## 3.10 (Modified account Class)
 
-```java Account.java
+```java
 // Account.java
 public class Account {
     
@@ -70,9 +70,8 @@ public class Account {
 }
 ```
 
-```java {id="AccountTest" class="blue large" data-filename="AccountTest.java"}
+```java
 // AccountTest.java
-// Inputting and outputting floating-point numbers with Account objects.
 import java.util.Scanner;
 
 public class AccountTest {
